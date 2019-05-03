@@ -12,7 +12,7 @@ class Application
       item_name = req.path.split("/items/").last
       item = Item.all.find{|i| i == item_name}
 
-      resp.write item
+      resp.write item.price
     else
       # binding.pry
       resp.write "404 Route not found"

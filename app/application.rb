@@ -11,7 +11,7 @@ class Application
       # binding.pry
       item_name = req.path.split("/items/").last
       item = Item.all.find{|i| i == item_name}
-
+binding.pry
       resp.write item.price
     else
       # binding.pry

@@ -6,7 +6,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
-binding.pry
+# binding.pry
     if req.path.match(/items/)
       # binding.pry
       item_name = req.path.split("/items/").last
@@ -14,7 +14,7 @@ binding.pry
 
       resp.write item
     else
-      binding.pry
+      # binding.pry
       resp.write "404 Route not found"
       resp.status = 404
     end

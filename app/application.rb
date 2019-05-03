@@ -9,6 +9,7 @@ class Application
 # binding.pry
     if req.path.match(/items/)
       # binding.pry
+      
       item_name = req.path.split("/items/").last
       item = @@items.find{|i| i.name == item_name}
 # binding.pry

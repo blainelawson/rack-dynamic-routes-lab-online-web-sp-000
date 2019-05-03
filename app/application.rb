@@ -13,7 +13,8 @@ class Application
 
       resp.write item
     else
-      resp.write "400 Item not found"
+      resp.write "404 Item not found"
+      resp.status = 404
     end
   end
 end

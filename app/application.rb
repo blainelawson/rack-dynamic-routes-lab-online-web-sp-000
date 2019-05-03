@@ -8,7 +8,7 @@ class Application
 binding.pry
     if req.path.match(/items/)
     else
-      resp.write "400 Item does not exist"
+      resp.write "400 Item not found"
     end
   end
 end

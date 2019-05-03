@@ -14,7 +14,7 @@ binding.pry
 
       resp.write item
     else
-      pry
+      binding.pry
       resp.write "404 Route not found"
       resp.status = 404
     end
